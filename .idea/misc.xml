@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/ProyectosAS/ExamenA3/app/src/main/res/layout-land/activity_main.xml" value="0.2" />
         <entry key="..\:/ProyectosAS/ExamenA3/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ProyectosAS/ExamenA3/app/src/main/res/layout/activity_new.xml" value="0.1" />
+        <entry key="..\:/ProyectosAS/ExamenA3/app/src/main/res/layout/activity_recycler.xml" value="0.10739614994934144" />
+        <entry key="..\:/ProyectosAS/ExamenA3/app/src/main/res/layout/elemento_lista.xml" value="0.4" />
       </map>
     </option>
   </component>

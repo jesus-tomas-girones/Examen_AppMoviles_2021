@@ -2,6 +2,7 @@ package com.example.jtomas.examen_a;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,10 +14,13 @@ import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
+    //7 y 8.-RecyclerView
+    static public Map<Integer,Registro> mapa;
+
     // 5 a) Colecciones
-    static long    SEGUNDOS[]=  { 1000L, 4000L, 5000L, 6000L, 9000L,12000L,14000L,16000L};
-    static String  HABITACION[]={"sala","baño","baño","baño","sala","baño","sala","sala"};
-    static boolean ENCENDIDA[]= {  true,  true, false,  true, false, false,  true, false};
+    static public long    SEGUNDOS[]=  { 1000L, 4000L, 5000L, 6000L, 9000L,12000L,14000L,16500L};
+    static public String  HABITACION[]={"sala","baño","baño","baño","sala","baño","sala","sala"};
+    static public boolean ENCENDIDA[]= {  true,  true, false,  true, false, false,  true, false};
 
     // 4.-Guardar estado
     String textoBoton;
@@ -40,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // 5 c) Colecciones
-        Map<Integer,Registro> mapa = Registro.creaMapa(SEGUNDOS,HABITACION,ENCENDIDA);
+        mapa = Registro.creaMapa(SEGUNDOS,HABITACION,ENCENDIDA);
         Log.d("xEXAMEN", mapa.toString());
 
         // 6.-Algoritmo
@@ -63,6 +67,15 @@ public class MainActivity extends AppCompatActivity {
             }
             Log.d("xxEXAMEN", "Habitación "+habitacion+ " encendida "+totalHabitacion+" segundos");
         }
+        //7 y 8.-RecyclerView
+        Button button3 = findViewById(R.id.button_3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), RecyclerActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     //4.-Guardar estado
