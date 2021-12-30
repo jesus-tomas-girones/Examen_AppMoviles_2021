@@ -19,7 +19,7 @@ Minimum API level: 16 Android 4.1 (Jelly Bean)
 ```
 **1.**	El Layout principal se mostrará de la siguiente forma (en vertical y en horizontal):
 
-<Insertar Foto>
+![imagen del layout](https://raw.githubusercontent.com/jesus-tomas-girones/Examen_AppMoviles_2021/master/layout.jpg)
        
 •	El ancho y alto de los botones ha de ajustarse para abarcar toda la pantalla. 
 
